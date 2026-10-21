@@ -28,6 +28,8 @@ KO_MODULE_SRC += \
 # Build Options
 #
 ccflags-y += -DDEBUG
+# <misc/...> wrappers for kernels that keep these headers in include/linux
+ccflags-y += -I$(src)/../../compat
 
 #
 # Final Objects
